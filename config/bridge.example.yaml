@@ -1,0 +1,9 @@
+broker_uri: tcp://localhost:1883
+client_id: ros-mqtt-vehicle-bridge
+
+mqtt_publish_topic: vehicle/task_cmd
+mqtt_subscribe_topic: vehicle/mqtt_cmd
+ros_subscribe_topic: /vehicle/task_cmd_json
+ros_publish_topic: /vehicle/mqtt_cmd_json
+
+qos: 1

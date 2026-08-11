@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ros_mqtt_vehicle_bridge</name>
+  <version>0.1.0</version>
+  <description>A configurable JSON bridge between ROS 1 topics and MQTT topics.</description>
+
+  <maintainer email="maintainer@example.com">QAQgpnu</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+
+  <export />
+</package>

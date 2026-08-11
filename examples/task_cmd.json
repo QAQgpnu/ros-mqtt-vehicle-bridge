@@ -1,0 +1,13 @@
+{
+  "task_id": "task-0001",
+  "vehicle_id": "demo-vehicle-01",
+  "action": "move",
+  "target": {
+    "x": 1.2,
+    "y": 3.4,
+    "yaw": 0.0
+  },
+  "metadata": {
+    "source": "local-demo"
+  }
+}

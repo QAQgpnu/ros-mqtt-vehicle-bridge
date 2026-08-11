@@ -1,0 +1,15 @@
+.catkin_tools/
+.vscode/
+.idea/
+build/
+devel/
+install/
+log/
+*.bag
+*.db3
+*.log
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc

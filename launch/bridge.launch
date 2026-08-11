@@ -1,0 +1,12 @@
+<launch>
+  <arg name="broker_uri" default="tcp://localhost:1883" />
+  <arg name="config" default="$(find ros_mqtt_vehicle_bridge)/config/bridge.example.yaml" />
+
+  <node pkg="ros_mqtt_vehicle_bridge"
+        type="bridge_node"
+        name="ros_mqtt_vehicle_bridge"
+        output="screen">
+    <rosparam command="load" file="$(arg config)" />
+    <param name="broker_uri" value="$(arg broker_uri)" />
+  </node>
+</launch>
