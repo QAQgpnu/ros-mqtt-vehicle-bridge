@@ -1,0 +1,10 @@
+{"version": 2, "width": 110, "height": 24, "timestamp": 0, "env": {"TERM": "xterm-256color", "SHELL": "/bin/bash"}}
+[0.2, "o", "\\u001b[1;36mROS-MQTT Vehicle Bridge :: offline contract demo\\u001b[0m\\r\\n"]
+[0.2, "o", "This simulates the public topics; it does not connect to a broker.\\r\\n"]
+[0.4, "o", "ROS publish  /vehicle/task_cmd_json  {\\\"action\\\":\\\"move\\\",\\\"target\\\":{\\\"x\\\":1.2,\\\"y\\\":3.4},\\\"task_id\\\":\\\"demo-0001\\\"}\\r\\n"]
+[0.2, "o", "Bridge       -> MQTT vehicle/task_cmd\\r\\n"]
+[0.2, "o", "MQTT broker  received {\\\"action\\\":\\\"move\\\",\\\"target\\\":{\\\"x\\\":1.2,\\\"y\\\":3.4},\\\"task_id\\\":\\\"demo-0001\\\"}\\r\\n"]
+[0.4, "o", "MQTT publish vehicle/mqtt_cmd  {\\\"command\\\":\\\"pause\\\",\\\"reason\\\":\\\"operator_request\\\"}\\r\\n"]
+[0.2, "o", "Bridge       -> ROS /vehicle/mqtt_cmd_json\\r\\n"]
+[0.2, "o", "ROS consumer received {\\\"command\\\":\\\"pause\\\",\\\"reason\\\":\\\"operator_request\\\"}\\r\\n"]
+
