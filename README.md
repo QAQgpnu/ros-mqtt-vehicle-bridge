@@ -2,6 +2,10 @@
 
 [English](#english) · [中文](#中文)
 
+[![Quality](https://github.com/QAQgpnu/ros-mqtt-vehicle-bridge/actions/workflows/quality.yml/badge.svg)](https://github.com/QAQgpnu/ros-mqtt-vehicle-bridge/actions/workflows/quality.yml)
+
+**Keywords:** ROS 1 · MQTT · robotics · autonomous vehicles · C++ · JSON · Ubuntu · system integration
+
 一个面向 ROS 1 / Ubuntu 20.04 的轻量 JSON 消息桥接器，在 ROS Topic 与 MQTT Topic 之间双向转发任务和车辆消息。
 
 > 本仓库是从实际车辆系统集成经验中整理出的通用公开版本。企业地址、账号、密码、私有消息定义、客户数据和构建产物均未包含。
@@ -11,6 +15,8 @@
 ### 它解决什么问题
 
 机器人或无人车通常在本机使用 ROS 通信，而调度平台、云端服务和 Web 系统更常使用 MQTT。本项目在两者之间提供一个边界清晰的桥接节点：
+
+适合需要把机器人本地消息接入调度平台、云端服务或 Web 系统的开发者。它刻意保持消息契约小而通用，方便替换企业内部 adapter。
 
 ```mermaid
 flowchart LR
