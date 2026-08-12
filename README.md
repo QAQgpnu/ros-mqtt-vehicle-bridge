@@ -26,6 +26,18 @@ flowchart LR
     B -->|"/vehicle/mqtt_cmd_json"| D["ROS 消费节点"]
 ```
 
+![ROS–MQTT bridge architecture](docs/architecture.svg)
+
+### 一眼看懂：离线可视化 Demo
+
+不安装 ROS、MQTT 或 Docker，也可以先看到双向消息流：
+
+```bash
+python demo/terminal_demo.py --delay 0.2
+```
+
+它会演示 `ROS → MQTT` 和 `MQTT → ROS` 两个方向，并拒绝格式错误或非对象 JSON。这个 Demo 只验证公开消息契约，不冒充原生 ROS/Paho 编译验证；完整路径见 [`demo/README.md`](demo/README.md)，终端录屏见 [`demo/terminal-demo.cast`](demo/terminal-demo.cast)。
+
 ### 特性
 
 - ROS → MQTT 与 MQTT → ROS 双向转发
